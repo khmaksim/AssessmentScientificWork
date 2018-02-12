@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>785</width>
-    <height>463</height>
+    <width>812</width>
+    <height>553</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,144 +17,7 @@
    <bool>true</bool>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
-   <item row="1" column="1">
-    <widget class="QComboBox" name="typeScientificResearchComboBox">
-     <item>
-      <property name="text">
-       <string>fundamental study</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>applied research</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>experimental development</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>military-scientific support</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>innovative research</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="3" column="1">
-    <widget class="QLineEdit" name="nameStageLineEdit">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="text">
-      <string>1</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="0">
-    <widget class="QLabel" name="label_2">
-     <property name="text">
-      <string>Name stage:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="3">
-    <widget class="QDoubleSpinBox" name="stageLaborCostsScientificDoubleSpinBox">
-     <property name="maximum">
-      <double>99999999.989999994635582</double>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="2">
-    <widget class="QLabel" name="label_10">
-     <property name="text">
-      <string>Stage labor costs (scientific result):</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="2">
-    <widget class="QLabel" name="label_13">
-     <property name="text">
-      <string>General labor costs:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="3">
-    <widget class="QDoubleSpinBox" name="generalLaborCostsDoubleSpinBox">
-     <property name="maximum">
-      <double>99999999.989999994635582</double>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="1">
-    <widget class="QLabel" name="resultKNRLabel">
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-       <weight>75</weight>
-       <italic>false</italic>
-       <bold>true</bold>
-       <underline>true</underline>
-       <kerning>true</kerning>
-      </font>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="1">
-    <widget class="QLineEdit" name="nameWorkLineEdit">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label_11">
-     <property name="text">
-      <string>Type of scientific research:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_16">
-     <property name="text">
-      <string>Type of scientific results:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="5">
-    <widget class="QDoubleSpinBox" name="stageLaborCostsPracticalDoubleSpinBox"/>
-   </item>
-   <item row="3" column="6" colspan="4">
-    <spacer name="horizontalSpacer_5">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="0" column="4" colspan="6">
+   <item row="0" column="4" colspan="4">
     <spacer name="horizontalSpacer_4">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -167,17 +30,20 @@
      </property>
     </spacer>
    </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>Name work:</string>
+   <item row="2" column="2" colspan="6">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
-     <property name="buddy">
-      <cstring>nameWorkLineEdit</cstring>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
      </property>
-    </widget>
+    </spacer>
    </item>
-   <item row="4" column="0" colspan="10">
+   <item row="7" column="0" colspan="8">
     <widget class="QGroupBox" name="groupBox">
      <property name="title">
       <string>Quality indicators of scientific work</string>
@@ -207,6 +73,9 @@
        <widget class="QLabel" name="label_7">
         <property name="text">
          <string>Objectness:</string>
+        </property>
+        <property name="buddy">
+         <cstring>objectnessComboBox</cstring>
         </property>
        </widget>
       </item>
@@ -238,12 +107,18 @@
         <property name="text">
          <string>Evidence and substantiation:</string>
         </property>
+        <property name="buddy">
+         <cstring>evidenceSubstantiationComboBox</cstring>
+        </property>
        </widget>
       </item>
       <item row="0" column="0">
        <widget class="QLabel" name="label_3">
         <property name="text">
          <string>Novelty:</string>
+        </property>
+        <property name="buddy">
+         <cstring>noveltyComboBox</cstring>
         </property>
        </widget>
       </item>
@@ -272,12 +147,18 @@
         <property name="text">
          <string>Severity:</string>
         </property>
+        <property name="buddy">
+         <cstring>severityComboBox</cstring>
+        </property>
        </widget>
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="label_4">
         <property name="text">
          <string>Objectivity:</string>
+        </property>
+        <property name="buddy">
+         <cstring>objectivityComboBox</cstring>
         </property>
        </widget>
       </item>
@@ -305,12 +186,18 @@
         <property name="text">
          <string>System:</string>
         </property>
+        <property name="buddy">
+         <cstring>systemComboBox</cstring>
+        </property>
        </widget>
       </item>
       <item row="6" column="0">
        <widget class="QLabel" name="label_9">
         <property name="text">
          <string>Verifiability:</string>
+        </property>
+        <property name="buddy">
+         <cstring>verifiabilityComboBox</cstring>
         </property>
        </widget>
       </item>
@@ -348,6 +235,9 @@
         <property name="text">
          <string>Amount of borrowing:</string>
         </property>
+        <property name="buddy">
+         <cstring>amountBorrowingDoubleSpinBox</cstring>
+        </property>
        </widget>
       </item>
       <item row="0" column="5">
@@ -366,7 +256,296 @@
      </layout>
     </widget>
    </item>
-   <item row="5" column="0" colspan="10">
+   <item row="2" column="1">
+    <widget class="QComboBox" name="typeScientificResearchComboBox">
+     <item>
+      <property name="text">
+       <string>fundamental study</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>applied research</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>experimental development</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>military-scientific support</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>innovative research</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_13">
+     <property name="text">
+      <string>General labor costs:</string>
+     </property>
+     <property name="buddy">
+      <cstring>generalLaborCostsDoubleSpinBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QDoubleSpinBox" name="generalLaborCostsDoubleSpinBox">
+     <property name="maximum">
+      <double>99999999.989999994635582</double>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QLabel" name="resultKNRLabel">
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>true</underline>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="nameWorkLineEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>Type of scientific research:</string>
+     </property>
+     <property name="buddy">
+      <cstring>typeScientificResearchComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_16">
+     <property name="text">
+      <string>Type of scientific results:</string>
+     </property>
+     <property name="buddy">
+      <cstring>typeScientificResultComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_17">
+     <property name="text">
+      <string>Level of scientific results:</string>
+     </property>
+     <property name="buddy">
+      <cstring>levelScientificResultComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QComboBox" name="levelScientificResultComboBox">
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Name work:</string>
+     </property>
+     <property name="buddy">
+      <cstring>nameWorkLineEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_14">
+     <property name="text">
+      <string>Сriterion for assessing the quality:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QComboBox" name="typeScientificResultComboBox">
+     <item>
+      <property name="text">
+       <string>methodical</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>theoretical</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>synergetic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>innovative</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>systemic</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="nameStageLineEdit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Stage labor costs (scientific result):</string>
+     </property>
+     <property name="buddy">
+      <cstring>stageLaborCostsScientificDoubleSpinBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QDoubleSpinBox" name="stageLaborCostsScientificDoubleSpinBox">
+     <property name="maximum">
+      <double>99999999.989999994635582</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QLabel" name="label_15">
+     <property name="text">
+      <string>Stage labor costs (practical result):</string>
+     </property>
+     <property name="buddy">
+      <cstring>stageLaborCostsPracticalDoubleSpinBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Name stage:</string>
+     </property>
+     <property name="buddy">
+      <cstring>nameStageLineEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QComboBox" name="levelPracticalResultComboBox"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_18">
+     <property name="text">
+      <string>Level of practical result:</string>
+     </property>
+     <property name="buddy">
+      <cstring>levelPracticalResultComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5" colspan="2">
+    <widget class="QDoubleSpinBox" name="stageLaborCostsPracticalDoubleSpinBox">
+     <property name="maximum">
+      <double>99999999.989999994635582</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="7">
+    <spacer name="horizontalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_19">
+     <property name="text">
+      <string>Weighting factor of the scientific result:</string>
+     </property>
+     <property name="buddy">
+      <cstring>weightingFactorScientificResultDoubleSpinBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_20">
+     <property name="text">
+      <string>Practical result weighting factor:</string>
+     </property>
+     <property name="buddy">
+      <cstring>weightingFactorPracticalResultDoubleSpinBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QDoubleSpinBox" name="weightingFactorScientificResultDoubleSpinBox">
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="8">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="title">
       <string>Results</string>
@@ -417,6 +596,11 @@
           <string>Labor expenditures (practical result)</string>
          </property>
         </column>
+        <column>
+         <property name="text">
+          <string>Level practical result</string>
+         </property>
+        </column>
        </widget>
       </item>
       <item row="0" column="1">
@@ -445,96 +629,73 @@
      </layout>
     </widget>
    </item>
-   <item row="6" column="0">
-    <widget class="QLabel" name="label_14">
+   <item row="6" column="1">
+    <widget class="QDoubleSpinBox" name="weightingFactorPracticalResultDoubleSpinBox">
+     <property name="maximum">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2">
+    <widget class="QLabel" name="label_21">
      <property name="text">
-      <string>Сriterion for assessing the quality:</string>
+      <string>Effectiveness:</string>
      </property>
     </widget>
    </item>
-   <item row="3" column="4">
-    <widget class="QLabel" name="label_15">
+   <item row="9" column="3">
+    <widget class="QLabel" name="resultRNRLabel">
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>true</underline>
+      </font>
+     </property>
      <property name="text">
-      <string>Stage labor costs (practical result):</string>
+      <string/>
      </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="QComboBox" name="typeScientificResultComboBox">
-     <item>
-      <property name="text">
-       <string>methodical</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>theoretical</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>synergetic</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>innovative</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>systemic</string>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="1" column="2" colspan="8">
-    <spacer name="horizontalSpacer_3">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="2" column="2">
-    <widget class="QLabel" name="label_17">
-     <property name="text">
-      <string>Level of scientific results:</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="3">
-    <widget class="QComboBox" name="levelScientificResultComboBox">
-     <item>
-      <property name="text">
-       <string>1</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>2</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>3</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>4</string>
-      </property>
-     </item>
     </widget>
    </item>
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>nameWorkLineEdit</tabstop>
+  <tabstop>generalLaborCostsDoubleSpinBox</tabstop>
+  <tabstop>nameStageLineEdit</tabstop>
+  <tabstop>stageLaborCostsScientificDoubleSpinBox</tabstop>
+  <tabstop>stageLaborCostsPracticalDoubleSpinBox</tabstop>
+  <tabstop>typeScientificResearchComboBox</tabstop>
+  <tabstop>typeScientificResultComboBox</tabstop>
+  <tabstop>levelScientificResultComboBox</tabstop>
+  <tabstop>levelPracticalResultComboBox</tabstop>
+  <tabstop>weightingFactorScientificResultDoubleSpinBox</tabstop>
+  <tabstop>weightingFactorPracticalResultDoubleSpinBox</tabstop>
+  <tabstop>noveltyComboBox</tabstop>
+  <tabstop>noveltyDoubleSpinBox</tabstop>
+  <tabstop>amountBorrowingDoubleSpinBox</tabstop>
+  <tabstop>objectivityComboBox</tabstop>
+  <tabstop>objectivityDoubleSpinBox</tabstop>
+  <tabstop>evidenceSubstantiationComboBox</tabstop>
+  <tabstop>evidenceSubstantiationDoubleSpinBox</tabstop>
+  <tabstop>severityComboBox</tabstop>
+  <tabstop>severityDoubleSpinBox</tabstop>
+  <tabstop>objectnessComboBox</tabstop>
+  <tabstop>objectnessDoubleSpinBox</tabstop>
+  <tabstop>systemComboBox</tabstop>
+  <tabstop>systemDoubleSpinBox</tabstop>
+  <tabstop>verifiabilityComboBox</tabstop>
+  <tabstop>verifiabilityDoubleSpinBox</tabstop>
+  <tabstop>addResultButton</tabstop>
+  <tabstop>tableWidget</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

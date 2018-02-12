@@ -4,37 +4,37 @@
 <context>
     <name>MainDialog</name>
     <message>
-        <location filename="maindialog.ui" line="183"/>
+        <location filename="maindialog.ui" line="49"/>
         <source>Quality indicators of scientific work</source>
         <translation>Показатели качества научной работы</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="246"/>
+        <location filename="maindialog.ui" line="112"/>
         <source>Novelty:</source>
         <translation>Новизна:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="280"/>
+        <location filename="maindialog.ui" line="146"/>
         <source>Objectivity:</source>
         <translation>Объективность:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="273"/>
+        <location filename="maindialog.ui" line="139"/>
         <source>Severity:</source>
         <translation>Выраженность:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="130"/>
+        <location filename="maindialog.ui" line="311"/>
         <source>Type of scientific research:</source>
         <translation>Вид научного исследования:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="349"/>
+        <location filename="maindialog.ui" line="215"/>
         <source>Amount of borrowing:</source>
         <translation>Объем заимствования:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="372"/>
+        <location filename="maindialog.ui" line="493"/>
         <source>Results</source>
         <translation>Результаты</translation>
     </message>
@@ -47,141 +47,166 @@
         <translation type="vanished">Трудозатраты этапа:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="24"/>
+        <location filename="maindialog.ui" line="239"/>
         <source>fundamental study</source>
         <translation>фундаментальные исследования</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="29"/>
+        <location filename="maindialog.ui" line="244"/>
         <source>applied research</source>
         <translation>прикладные исследования</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="34"/>
+        <location filename="maindialog.ui" line="249"/>
         <source>experimental development</source>
         <translation>экспериментальные разработки</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="39"/>
+        <location filename="maindialog.ui" line="254"/>
         <source>military-scientific support</source>
         <translation>военно-научное сопровождение</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="44"/>
+        <location filename="maindialog.ui" line="259"/>
         <source>innovative research</source>
         <translation>инновационные исследования</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="58"/>
-        <location filename="maindialog.ui" line="515"/>
+        <location filename="maindialog.ui" line="333"/>
+        <location filename="maindialog.ui" line="408"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="79"/>
+        <location filename="maindialog.ui" line="415"/>
         <source>Stage labor costs (scientific result):</source>
         <translation>Трудозатраты (научный результат) этапа:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="86"/>
+        <location filename="maindialog.ui" line="267"/>
         <source>General labor costs:</source>
         <translation>Общие трудозатраты:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="137"/>
+        <location filename="maindialog.ui" line="318"/>
         <source>Type of scientific results:</source>
         <translation>Типы научных результатов:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="407"/>
+        <location filename="maindialog.ui" line="528"/>
         <source>Value of the scientific result</source>
         <translation>Оценка научных результатов</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="412"/>
+        <location filename="maindialog.ui" line="533"/>
         <source>Labor expenditures (scientific result)</source>
         <translation>Трудозатраты (научный результат)</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="417"/>
+        <location filename="maindialog.ui" line="538"/>
         <source>Labor expenditures (practical result)</source>
         <translation>Трудозатраты (практический результат)</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="451"/>
+        <location filename="maindialog.ui" line="366"/>
         <source>Сriterion for assessing the quality:</source>
         <translation>Критерий оценки качества:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="458"/>
+        <location filename="maindialog.ui" line="429"/>
         <source>Stage labor costs (practical result):</source>
         <translation>Трудозатраты (практического результата) этапа:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="466"/>
+        <location filename="maindialog.ui" line="374"/>
         <source>methodical</source>
         <translation>методические</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="471"/>
+        <location filename="maindialog.ui" line="379"/>
         <source>theoretical</source>
         <translation>теоретические</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="476"/>
+        <location filename="maindialog.ui" line="384"/>
         <source>synergetic</source>
         <translation>синергетические</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="481"/>
+        <location filename="maindialog.ui" line="389"/>
         <source>innovative</source>
         <translation>инновационные</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="486"/>
+        <location filename="maindialog.ui" line="394"/>
         <source>systemic</source>
         <translation>системные</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="507"/>
+        <location filename="maindialog.ui" line="325"/>
         <source>Level of scientific results:</source>
         <translation>Уровень научных результатов:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="520"/>
+        <location filename="maindialog.ui" line="338"/>
         <source>2</source>
         <translation>2</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="525"/>
+        <location filename="maindialog.ui" line="343"/>
         <source>3</source>
         <translation>3</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="530"/>
+        <location filename="maindialog.ui" line="348"/>
         <source>4</source>
         <translation>4</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="65"/>
+        <location filename="maindialog.ui" line="436"/>
         <source>Name stage:</source>
         <oldsource>Stage</oldsource>
         <translation>Название этапа:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="397"/>
+        <location filename="maindialog.ui" line="446"/>
+        <source>Level of practical result:</source>
+        <translation>Уровень практического результата:</translation>
+    </message>
+    <message>
+        <location filename="maindialog.ui" line="469"/>
+        <source>Weighting factor of the scientific result:</source>
+        <translation>Весовой коэффициент научного результата:</translation>
+    </message>
+    <message>
+        <location filename="maindialog.ui" line="476"/>
+        <source>Practical result weighting factor:</source>
+        <translation>Весовой коэффициент практического результата:</translation>
+    </message>
+    <message>
+        <location filename="maindialog.ui" line="518"/>
         <source>Name result</source>
         <translation>Наименование результата</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="402"/>
+        <location filename="maindialog.ui" line="523"/>
         <source>Criterion for assessing the quality</source>
         <translation>Критерий оценки качества</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="428"/>
+        <location filename="maindialog.ui" line="543"/>
+        <source>Level practical result</source>
+        <translation>Уровень практического результата</translation>
+    </message>
+    <message>
+        <location filename="maindialog.ui" line="554"/>
         <source>Add result</source>
         <translation>Добавить результат</translation>
+    </message>
+    <message>
+        <location filename="maindialog.ui" line="587"/>
+        <source>Effectiveness:</source>
+        <translation>Результативность:</translation>
     </message>
     <message>
         <location filename="maindialog.ui" line="14"/>
@@ -189,17 +214,17 @@
         <translation>Оценка научной работы</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="239"/>
+        <location filename="maindialog.ui" line="105"/>
         <source>Evidence and substantiation:</source>
         <translation>Доказательность и обоснованность:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="306"/>
+        <location filename="maindialog.ui" line="172"/>
         <source>System:</source>
         <translation>Системность:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="313"/>
+        <location filename="maindialog.ui" line="179"/>
         <source>Verifiability:</source>
         <translation>Проверяемость:</translation>
     </message>
@@ -208,7 +233,7 @@
         <translation type="vanished">Трудоемкость:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="209"/>
+        <location filename="maindialog.ui" line="75"/>
         <source>Objectness:</source>
         <translation>Предметность:</translation>
     </message>
@@ -217,7 +242,7 @@
         <translation type="vanished">Количество этапов:</translation>
     </message>
     <message>
-        <location filename="maindialog.ui" line="173"/>
+        <location filename="maindialog.ui" line="356"/>
         <source>Name work:</source>
         <translation>Название работы:</translation>
     </message>
@@ -359,6 +384,21 @@
         <location filename="maindialog.cpp" line="48"/>
         <source>more than 10 years</source>
         <translation>превышающий 10 лет</translation>
+    </message>
+    <message>
+        <location filename="maindialog.cpp" line="50"/>
+        <source>at the level of chiefs OVU</source>
+        <translation>на уровне начальников ОВУ</translation>
+    </message>
+    <message>
+        <location filename="maindialog.cpp" line="51"/>
+        <source>at the level of deputy MO RF</source>
+        <translation>на уровне заместителей МО РФ</translation>
+    </message>
+    <message>
+        <location filename="maindialog.cpp" line="52"/>
+        <source>MO RF</source>
+        <translation>МО РФ</translation>
     </message>
 </context>
 </TS>

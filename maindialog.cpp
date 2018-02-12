@@ -47,6 +47,10 @@ MainDialog::MainDialog(QWidget *parent) :
     ui->verifiabilityComboBox->addItem(tr("within 10 years"), 0.6);
     ui->verifiabilityComboBox->addItem(tr("more than 10 years"), 0.5);
 
+    ui->levelPracticalResultComboBox->addItem(tr("at the level of chiefs OVU"), 1.5);
+    ui->levelPracticalResultComboBox->addItem(tr("at the level of deputy MO RF"), 2.0);
+    ui->levelPracticalResultComboBox->addItem(tr("MO RF"), 3.0);
+
     noveltyWeightRatio << 0.27 << 0.197 << 0.162 << 0.125 << 0.28;
     objectivityWeightRatio << 0.157 << 0.154 << 0.155 << 0.203 << 0.15;
     evidenceSubstantiationWeightRatio <<0.146 << 0.201 << 0.188 << 0.13 << 0.14;
@@ -71,6 +75,7 @@ MainDialog::MainDialog(QWidget *parent) :
     connect(ui->addResultButton, SIGNAL(clicked(bool)), this, SLOT(addResult()));
     connect(ui->generalLaborCostsDoubleSpinBox, SIGNAL(valueChanged(double)), this, SLOT(enableButton()));
     connect(ui->stageLaborCostsScientificDoubleSpinBox, SIGNAL(valueChanged(double)), this, SLOT(enableButton()));
+    connect(ui->stageLaborCostsPracticalDoubleSpinBox, SIGNAL(valueChanged(double)), this, SLOT(enableButton()));
 
     emit ui->noveltyComboBox->activated(0);
     emit ui->objectivityComboBox->activated(0);
@@ -137,6 +142,7 @@ void MainDialog::addResult()
     ui->tableWidget->setItem(numLastRow, 2, new QTableWidgetItem(QString::number(valuesScientificResult.value(ui->typeScientificResultComboBox->currentIndex()).at(ui->levelScientificResultComboBox->currentIndex()))));
     ui->tableWidget->setItem(numLastRow, 3, new QTableWidgetItem(QString::number(ui->stageLaborCostsScientificDoubleSpinBox->value())));
     ui->tableWidget->setItem(numLastRow, 4, new QTableWidgetItem(QString::number(ui->stageLaborCostsPracticalDoubleSpinBox->value())));
+    ui->tableWidget->setItem(numLastRow, 5, new QTableWidgetItem(QString::number(ui->levelPracticalResultComboBox->currentData().toDouble())));
 
     setResultGeneral();
 }
@@ -184,13 +190,16 @@ void MainDialog::setResultGeneral()
 
     ui->resultKNRLabel->setText(QString::number(Kknr));
 
-//    double Krnr = computeEffectiveness();
+    double Krnr = computeEffectiveness();
+
+    ui->resultRNRLabel->setText(QString::number(Krnr));
 }
 
 void MainDialog::enableButton()
 {
     if (ui->generalLaborCostsDoubleSpinBox->value() != 0 &&
-            ui->stageLaborCostsScientificDoubleSpinBox->value() != 0)
+            ui->stageLaborCostsScientificDoubleSpinBox->value() != 0 &&
+            ui->stageLaborCostsPracticalDoubleSpinBox->value() != 0)
         ui->addResultButton->setEnabled(true);
     else
         ui->addResultButton->setEnabled(false);
@@ -198,18 +207,32 @@ void MainDialog::enableButton()
 
 double MainDialog::computeEffectiveness()
 {
-//    double k = 0;
-//    double generalLaborCosts = ui->generalLaborCostsDoubleSpinBox->value();
-//    double Kunri = 0;
+    double generalLaborCosts = ui->generalLaborCostsDoubleSpinBox->value();
+    double Kunri = 0;
+    double Kunr = 0;
+    double Kupri = 0;
+    double Kupr = 0;
+    double laborCostsScientific = 0;
+    double laborCostsPractical = 0;
+    double Qnr = 0;
+    double Qpr = 0;
+    double Knr = 0;
+    double Kpr = 0;
+    double Anr = ui->weightingFactorScientificResultDoubleSpinBox->value();
+    double Apr = ui->weightingFactorPracticalResultDoubleSpinBox->value();
 
-//    for (int row = 0; row < ui->tableWidget->rowCount(); row++) {
-//        Kunri += ui->tableWidget->item(row, 2)->text().toInt();
-//        double laborCosts = ui->tableWidget->item(row, 4)->text().toDouble();
+    for (int row = 0; row < ui->tableWidget->rowCount(); row++) {
+        Kunri += ui->tableWidget->item(row, 2)->text().toInt();
+        laborCostsScientific = ui->tableWidget->item(row, 3)->text().toDouble();
+        laborCostsPractical = ui->tableWidget->item(row, 4)->text().toDouble();
+        Qnr += laborCostsScientific;
+        Qpr += laborCostsPractical;
+        Kunr += Kunri * laborCostsScientific;
+        Kupr += Kupri * laborCostsPractical;
+    }
+    Knr = (Kunr + generalLaborCosts * Qnr) / generalLaborCosts;
+    Kpr = (Kupr + generalLaborCosts * Qpr) / generalLaborCosts;
 
-//        k += Ki * (laborCosts / generalLaborCosts);
-//    }
 
-//    k = Kunri *
-
-//    return k;
+    return pow(Knr, Anr) * pow(Kpr, Apr);
 }
